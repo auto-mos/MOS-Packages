@@ -1,5 +1,6 @@
-# MOS-Tiny Packages
-제조운영체제(MOS) 보급패키지 중 Tiny Package는 데이터의 수집과 활용을 위한 기본 인프라를 제공하며, 기본 구성요소는 아래와 같습니다.  
+# MOS-Tiny Packages  
+제조운영체제(MOS) 보급패키지 중 Tiny Package는 데이터의 수집과 활용을 위한 기본 인프라를 제공하며, K8s 솔루션 없이 클라우드에 설치되는 보급패키지입니다.  
+Tiny Package의 기본 구성요소는 아래와 같습니다.  
 - MOS Edge  
 - MOS Cloud  
 - MOS Twin - Asset Administration Shell  
