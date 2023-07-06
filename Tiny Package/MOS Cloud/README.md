@@ -36,7 +36,7 @@ Root 권한 접속은 아래 명령어를 통해 가능합니다.
 ```mkdir /opt```  
 
 압축해제 명령어를 통해 두 압축파일의 압축을 풀어줍니다.  
-```gunzip ./*.gz```  
+```gunzip -d ./*.gz```  
 ![image](https://user-images.githubusercontent.com/114371609/228401640-93f69d96-118d-4710-83d3-fe3d8d11fbdf.png)
 
 ```tar xvf ./MOSpackage_apps.tar```  
