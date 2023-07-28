@@ -83,7 +83,7 @@ MOS Edge 솔루션은 *Ubuntu 20.04 LTS, intel CPU* 환경에서 제작 및 실�
 ```tar -xvf edgeInstallPackage_v2.tar```  
 
 **[3]** 아래 명령어를 입력하여 설치 작업용 스크립트를 실행합니다.  
-``` ./edgeInstallPackage_v2/install_Edge.sh ```  
+``` ./install_Edge.sh ```  
 
 **[4]** 이후 아래 명령어를 차례로 입력하여 암호 파일을 편집합니다.  
 ```cd sharedFolder/security```  
