@@ -1,5 +1,6 @@
 # 1. 개요  
-소규모 제조기업을 대상으로 하는 MOS Tiny Package : Cloud 설치 가이드 문서입니다.  
+소규모 제조기업을 대상으로 하는 MOS Tiny Package : Cloud 설치 및 운용 가이드 문서입니다.  
+매뉴얼 설치 스크립트에 대한 상세한 내용은 본 레포지토리의 [MOS Cloud Manual Details](https://github.com/auto-mos/MOS-Packages/blob/main/Tiny%20Package/MOS%20Cloud/MOS%20Cloud%20Manual%20Details.pdf) 문서 참조바랍니다.  
 
 # 2. MOS 설치 환경  
 본 MOS Tiny Package 시험 설치 및 동작은 Ubuntu 20.04.4 Cloud 이미지로 구축한 환경에서 진행되었습니다.  
