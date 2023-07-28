@@ -26,20 +26,22 @@ MOS Edge 솔루션은 *Ubuntu 20.04 LTS, intel CPU* 환경에서 제작 및 실�
   
 ### 1. 사용자 계정 생성  
 아래 명령어를 이용해 사용자 계정을 생성합니다  
-```admin@gateway:\~$ sudo adduser admin```  
+```******@gateway:\~$ sudo adduser admin```  
+계정 생성 시 이름 중복으로 인한 오류가 발생한다면 groupdel 또는 userdel 명령어를 이용해 기존 admin 그룹/계정 정보를 삭제 후 진행합니다.  
   ※ Hostname : gateway  
   
 ### 2. 계정 권한 설정  
 아래 명령어를 이용해 사용자의 권한을 설정합니다.  
-**[1]** admin@gateway:\~$ sudo usermod –aG sudo admin  
-**[2]** admin@gateway:\~$ sudo visudo 입력 후 파일 맨 아래에 다음 내용을 추가합니다.  
+**[1]** ******@gateway:\~$ sudo usermod –aG sudo admin  
+**[2]** ******@gateway:\~$ sudo visudo 입력 후 파일 맨 아래에 다음 내용을 추가합니다.  
 ```admin ALL=NOPASSWD:ALL```  
 ![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/3d70184c-8461-478d-bdab-6e35122b9f8d)  
+이후 admin 계정으로 다시 로그인하여 설치 진행합니다.  
   
 ### 3. 리눅스 초기 셋업  
 아래 명령어를 입력하여 호스트 이름을 설정합니다.  
 ```admin@gateway:\~$ sudo vi /etc/hostname 내용을 gateway로 수정```  
-```admin@gateway:\~$ sudo vi /etc/hosts```  
+```admin@gateway:\~$ sudo vi /etc/hosts```  입력 후  
 > 아래 사진과 같이 기존 호스트 이름을 gateway로 수정합니다.  
 ![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/358653c1-710c-41ad-a9ac-a66c114329d0)  
   
