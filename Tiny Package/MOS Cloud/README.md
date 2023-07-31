@@ -30,11 +30,14 @@ Root 권한 접속은 아래 명령어를 통해 가능합니다.
 ![image](https://user-images.githubusercontent.com/114371609/228400702-22254e6e-df5c-4d0b-bc66-75e9d089734c.png)  
 
 본 레포지토리에 있는 두 압축파일(MOSpackage_apps.tar.gz, MOSpackage_install.tar.gz)을 /opt 디렉토리 아래에 배치합니다.  
+만약 해당 디렉토리가 없다면 아래 명령어를 통해 디렉토리를 생성해주세요.  
+```mkdir /opt```  
+아래 명령어를 통해 /opt 디렉토리로 이동합니다.  
+```cd /opt```  
 아래 명령어를 이용해 다운로드 가능합니다.  
 ```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/MOSpackage_apps.tar.gz```  
 ```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/MOSpackage_install.tar.gz```  
-만약 해당 디렉토리가 없다면 아래 명령어를 통해 디렉토리를 생성해주세요.  
-```mkdir /opt```  
+
 
 압축해제 명령어를 통해 두 압축파일의 압축을 풀어줍니다.  
 ```gunzip -d ./*.gz```  
