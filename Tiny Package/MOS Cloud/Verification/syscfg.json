@@ -1,0 +1,23 @@
+{
+        "namespaces":
+        [
+                { "ns_index":1, "ns":"urn:open62541.server.application", "aas_id":"-" },
+                { "ns_index":2, "ns":"https://www.smart-factory.kr/datasolution", "aas_id":"-" }
+        ],
+        "system":
+        [
+                {
+                        "GatewayName": "MOS_GW",
+                        "NetworkConnection": "opc.tcp://1.2.3.4:4840",
+                        "SamplingInterval": "100.0",
+                        "FieldDevices" :
+                        [
+                                {
+                                        "DeviceName": "Test_PLC",
+                                        "NetworkConnection": "opc.tcp://121.66.242.172:4841",
+                                        "SamplingInterval": "50.0"
+                                }
+                        ]
+                }
+        ]
+}

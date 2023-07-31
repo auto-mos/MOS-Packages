@@ -1,0 +1,76 @@
+ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.NetworkConnection, , , , 100, -1
+ns=2;s=CloudDataSolution.CloudSolution.BasicConfiguration.SamplingInterval, , , , 100, -1
+ns=2;s=CloudDataSolution.EdgeGWSolution.MOS_GW.BasicConfiguration.NetworkConnection, , , , 100, -1
+ns=2;s=CloudDataSolution.EdgeGWSolution.MOS_GW.BasicConfiguration.SamplingInterval, , , , 100, -1
+ns=2;s=CloudDataSolution.EdgeGWSolution.MOS_GW.ProSix6A106F156S.BasicConfiguration.NetworkConnection, , , , 100, -1
+ns=2;s=CloudDataSolution.EdgeGWSolution.MOS_GW.ProSix6A106F156S.BasicConfiguration.SamplingInterval, , , , 100, -1
+ns=2;s=Nestfield.Identification.ManufacturerName, , , , 100, -1
+ns=2;s=Nestfield.Identification.SupplierName, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.Name, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.CountryCode, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.Street, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.PostalCode, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.City, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.PhysicalAddress.StateCounty, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.Email, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.URL, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.Phone, , , , 100, -1
+ns=2;s=Nestfield.Identification.ContactInfo.Fax, , , , 100, -1
+ns=2;s=Nestfield.Identification.URL, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerName, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Nameplate.SerialNumber, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Nameplate.ManufacturerProductDesignation, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Nameplate.YearOfConstruction, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Identification.ManufacturerName, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Identification.DateOfManufacture, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Identification.SupplierName, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Identification.SerialNumber, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPointName, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_X,MOS_GW,Test_PLC,ns=1;i=43701,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Y,MOS_GW,Test_PLC,ns=1;i=43702,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_Z,MOS_GW,Test_PLC,ns=1;i=43703,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_U,MOS_GW,Test_PLC,ns=1;i=43704,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_V,MOS_GW,Test_PLC,ns=1;i=43705,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.CurrentPosition.World.Position_W,MOS_GW,Test_PLC,ns=1;i=43706,1000, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_X, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Y, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_Z, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_U, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_V, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.HOME.World.Position_W, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_X, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Y, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_Z, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_U, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_V, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point1.World.Position_W, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_X, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Y, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_Z, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_U, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_V, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.TargetPosition.Point2.World.Position_W, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.EmergencyStop, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Safeguard, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Motors, , , , 100, -1
+ns=2;s=ProSix6A106F156S.OperationalData.RobotStatus.Power, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor1, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor2, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor3, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor4, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor5, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorPowerConsumption.Motor6, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_1, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_2, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_3, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_4, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_5, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.MotorOperatingSpeed.Motor_6, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Rated, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.Payload.Max, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.Repeatability, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.Weight, , , , 100, -1
+ns=2;s=ProSix6A106F156S.TechnicalData.NoiseLevel, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.Language, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentType, , , , 100, -1
+ns=2;s=ProSix6A106F156S.Documentation.Document001.DocumentSize, , , , 100, -1
