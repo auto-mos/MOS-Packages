@@ -87,8 +87,8 @@ MOS Edge 솔루션은 *Ubuntu 20.04 LTS, intel CPU* 환경에서 제작 및 실�
 
 **[4]** 이후 아래 명령어를 차례로 입력하여 암호 파일을 편집합니다.  
 ```cd sharedFolder/security```  
-```./dna_encrypt admin.secured```  
-```./dna_encrypt opcua.secured```  
+```./dna_encrypt admin.secured``` (웹 대시보드 암호)  
+```./dna_encrypt opcua.secured``` (OPCUA 계정 암호, mos_opcua 로 설정)  
 ```./dna_encrypt amqp.secured```  
 ```./dna_encrypt regiKey.secured```  
 - 설치 후 게이트웨이 웹 대시보드가 정상적으로 실행되지 않는다면 auxiliaryInstall.sh 실행 후 게이트웨이 웹 서비스를 재실행해주세요.  
