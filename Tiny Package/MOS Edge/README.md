@@ -91,6 +91,9 @@ MOS Edge 솔루션은 *Ubuntu 20.04 LTS, intel CPU* 환경에서 제작 및 실�
 ```./dna_encrypt opcua.secured```  
 ```./dna_encrypt amqp.secured```  
 ```./dna_encrypt regiKey.secured```  
+- 설치 후 게이트웨이 웹 대시보드가 정상적으로 실행되지 않는다면 auxiliaryInstall.sh 실행 후 게이트웨이 웹 서비스를 재실행해주세요.  
+![image](https://user-images.githubusercontent.com/82207645/210957839-91f731f9-ff0a-470e-a8e7-5fb6c7bf92a3.png)  
+``` sudo systemctl restart gatewayWeb.service```  
 
 ### (Optional) 7. MOS Edge ↔ MOS Cloud 등록  
 **\[6. 솔루션 설치 및 설정 작업\] 까지 진행하셨으면 MOS Edge 설치는 완료된 것입니다.**  
@@ -108,10 +111,7 @@ __※ MOS Cloud에서 MOS Edge 접속을 위한 RabbitMQ 계정 생성 시, ID�
 ![image](https://user-images.githubusercontent.com/82207645/161475597-5a4a63f9-2c4d-43f2-937a-738ce6fbac3c.png)  
 **본 절차까지 정상적으로 진행되었으면 MOS 클라우드 2D 대시보드에서도 데이터가 수집됨을 확인하실 수 있습니다.**  
 ※ 등록 절차가 정상적으로 수행되지않더라도 AAS 변환파일을 직접 OPCUA 모듈에 업로드하여 데이터 수집 절차 진행이 가능합니다. 자세한 절차는 매뉴얼 파일에 나와있으니 참고바랍니다.  
-- 설치 후 게이트웨이 웹 대시보드가 정상적으로 실행되지 않는다면 auxiliaryInstall.sh 실행 후 게이트웨이 웹 서비스를 재실행해주세요.  
-![image](https://user-images.githubusercontent.com/82207645/210957839-91f731f9-ff0a-470e-a8e7-5fb6c7bf92a3.png)  
-``` sudo systemctl restart gatewayWeb.service```  
-
+  
 ### 8. 추가된 기능  
 - 웹 대시보드 로그인 패스워드 변경 기능이 추가되었습니다.  
 ![image](https://user-images.githubusercontent.com/82207645/161477117-364cfe60-76ab-4cb2-ac12-ea92e9a371c5.png)  
