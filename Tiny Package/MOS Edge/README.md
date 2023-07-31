@@ -123,6 +123,9 @@ __※ MOS Cloud에서 MOS Edge 접속을 위한 RabbitMQ 계정 생성 시, ID�
 ![image](https://user-images.githubusercontent.com/82207645/210957031-69780b10-76b0-4998-9773-e1345560a0bd.png)  
 - copyToOPC.sh 파일을 이용해 설정 파일을 opcuaModule내 설정 파일 위치로 복사할 수 있습니다.  
 ![image](https://user-images.githubusercontent.com/82207645/210957272-8cd152da-5000-45bd-bfe9-1a4e6fb30ad0.png)  
+
+### 9. 기능동작 점검
+- MOS Edge 설치 완료 후 OPCUA 데이터 수집 기능 동작 점검 방법은 [링크](https://github.com/auto-mos/MOS-Packages/tree/main/Tiny%20Package/MOS%20Edge/Verification)를 통해 확인해주세요.  
   
 ## 솔루션 설치는 본 Repository의 다음 문서를 참고하여 진행합니다.  
 * [**MOS Edge Manual**](https://github.com/auto-mos/MOS-Packages/blob/main/Tiny%20Package/MOS%20Edge/MOS%20Edge%20Manual.pdf)  
