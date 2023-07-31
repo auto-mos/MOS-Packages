@@ -12,4 +12,5 @@
      "Data Sending" 항목을 통해 실시간으로 데이터가 수집되는 모습을 확인하실 수 있습니다.  
   ![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/05713bc9-0552-449b-bd82-b1edbd84bb17)  
 
-
+※ syscfg.json 파일의 접속정보를 통해 접근 가능한 데이터 서버는 테스트를 위한 임시 서버로, 기능동작 점검이 완료되면 트래픽 안정화를 위해 접속을 종료해주시기 바랍니다.  
+![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/092e56ff-961c-48ed-ba9d-281f47f0686d)  
