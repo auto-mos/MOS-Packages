@@ -1,5 +1,5 @@
 # 1. 개요  
-본 문서는 MOS Tiny Package의 구성요소인 MOS Edge 설치 방법에 대해 설명합니다.  
+Standard Package에서의 MOS Edge는 Tiny Package와 동일한 구성/방법으로 설치 및 동작 시험을 진행합니다.  
 
 # 2. 솔루션 설치 환경  
 MOS Edge 솔루션은 *Ubuntu 20.04 LTS, intel CPU* 환경에서 제작 및 실행 테스트 진행되었습니다.  
