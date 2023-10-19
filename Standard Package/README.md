@@ -8,7 +8,7 @@ Standard Package의 기본 구성요소는 아래와 같습니다.
 - AAS Browser  
 - MOS Basic Dashboard
 - 신호이상 탐지 서비스  
-- MOS Management Dashboard Service
-+ 각 플랜 별 특화 서비스  
+- MOS Management Dashboard Service  
+- 그 외 각 플랜 별 특화 서비스  
 ![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/1785a532-1e02-4824-bd60-68e64c3a2281)
 
