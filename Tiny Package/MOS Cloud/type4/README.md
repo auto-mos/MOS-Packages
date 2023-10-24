@@ -10,8 +10,12 @@ localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이
 # 3. 설치 및 실행방법
 * MOS Cloud에 설치된 RabbitMQ의 MQTT 플러그인 기능을 활성화합니다.  
 ```rabbitmq-plugins enable rabbitmq_mqtt```  
+* MOS Cloud에 gather_mqtt.tar 파일을 다운로드한 후 압축 해제합니다.
+```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/type4/gather_mqtt.tar```  
+```tar xvf gather_mqtt.tar```  
 * 본 페로지토리에 포함된 gather_mqtt 실행파일을 MOS Cloud의 /opt/bin 디렉토리에 위치시킵니다.  
 ```mv gather_mqtt /opt/bin/```  
+```mv gather_mqtt.sh /opt/bin/```  
 * gather_mqtt.service 파일을 /usr/lib/systemd/system/ 디렉토리에 위치시킵니다.  
 ```mv gather_mqtt /usr/lib/systemd/system/```  
 * 아래 명령어를 통해 시스템에 서비스를 등록합니다.  
