@@ -1,0 +1,17 @@
+# 1. 개요  
+필드 장비로부터 전송되는 MQTT 메시지를 MOS Cloud의 시계열데이터베이스에 저장 기능을 지원하는 인터페이스 소프트웨어입니다.  
+
+# 2. MQTT 메시지 규격  
+MOS Cloud에서 처리 가능한 MQTT 규격은 아래와 같습니다.(JSON포맷 사용)  
+localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이터 전송 시점의 시간을 자동으로 기록합니다.  
+
+# 3. 설치 및 실행방법
+* MOS Cloud에 설치된 RabbitMQ의 MQTT 플러그인 기능을 활성화합니다.  
+```rabbitmq-plugins enable rabbitmq_mqtt```  
+* 본 페로지토리에 포함된 gather_mqtt 실행파일을 MOS Cloud의 /opt/bin 디렉토리에 위치시킵니다.  
+```mv gather_mqtt /opt/bin/```  
+* gather_mqtt.service 파일을 /usr/lib/systemd/system/ 디렉토리에 위치시킵니다.  
+```mv gather_mqtt /usr/lib/systemd/system/```  
+* 아래 명령어를 통해 시스템에 서비스를 등록합니다.  
+```systemctl enable gather_mqtt```  
+  
