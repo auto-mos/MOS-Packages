@@ -22,7 +22,7 @@ localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이
 ```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/type4/gather_mqtt.tar```  
 ** 다운로드 시 오류가 발생한다면 아래 명령어를 이용해 다운로드 해주세요.  
 ```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/type4/gather_mqtt.tar --no-check-certificate```  
-* 아래 명령어로 압축해제 해주세요.
+* 아래 명령어로 압축해제 해주세요.  
 ```tar xvf gather_mqtt.tar```  
 * 본 페로지토리에 포함된 gather_mqtt 실행파일을 MOS Cloud의 /opt/bin 디렉토리에 위치시킵니다.  
 ```mv gather_mqtt /opt/bin/```  
