@@ -4,8 +4,11 @@
 # 2. MQTT 메시지 규격  
 MOS Cloud에서 처리 가능한 MQTT 규격은 아래와 같습니다.(JSON포맷 사용)  
 localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이터 전송 시점의 시간을 자동으로 기록합니다.  
-![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/b0c797f7-476d-4e15-83c3-a29d50d34a17)  
+![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/65259adc-3d89-4664-b576-22eeaeae2a9f)  
 * 예시  
+```MQTT 전송 토픽 : mos/type-4/[장비명]```  
+```MQTT 접속 정보 : [IP : MOS Cloud의 IP] / [PORT : 1883]```  
+```MQTT 전송 메시지 예 : ```  
 <pre>
 {  
     "localtime": "1698218076000000000",  
