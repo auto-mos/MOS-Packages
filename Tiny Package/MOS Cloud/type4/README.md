@@ -18,7 +18,8 @@ localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이
 	]  
 }    
 </pre>
-# 3. 설치 및 실행방법
+# 3. 설치 및 실행방법  
+※ sudo su 명령어를 이용해 root권한으로 진행해주세요.  
 * MOS Cloud에 설치된 RabbitMQ의 MQTT 플러그인 기능을 활성화합니다.  
 ```rabbitmq-plugins enable rabbitmq_mqtt```  
 * MOS Cloud에 gather_mqtt.tar 파일을 다운로드합니다.  
