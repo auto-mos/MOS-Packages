@@ -5,6 +5,7 @@
 MOS Cloud에서 처리 가능한 MQTT 규격은 아래와 같습니다.(JSON포맷 사용)  
 localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이터 전송 시점의 시간을 자동으로 기록합니다.  
 ![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/b0c797f7-476d-4e15-83c3-a29d50d34a17)  
+* 예시  
 <pre>
 {  
     "localtime": "1698218076000000000",  
