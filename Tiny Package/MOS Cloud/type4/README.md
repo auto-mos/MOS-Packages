@@ -10,11 +10,22 @@ localtime 값은 Unix timestamp 값을 사용합니다. 0을 넣는다면 데이
 ```MQTT 접속 정보 : [IP : MOS Cloud의 IP] / [PORT : 1883]```  
 ```MQTT 전송 메시지 예 : ```  
 <pre>
+- 데이터 timestamp 일괄 전송 메시지 예
 {  
-    "localtime": "1698218076000000000",  
+    "localtime": 1698218076000000000,  
 	"data": [  
 	    { "tag" : "sample1", "value":"RUN"},  
 	    { "tag" : "sample2", "value":"1"}  
+	]  
+}    
+</pre>
+<pre>
+- 데이터 timestamp 개별 전송 메시지 예
+{  
+    "localtime": 0,  
+	"data": [  
+	    { "tag" : "sample1", "value":"RUN", "timestamp":169898671000000000},  
+	    { "tag" : "sample2", "value":"1", "timestamp":169898671000000000}  
 	]  
 }    
 </pre>
