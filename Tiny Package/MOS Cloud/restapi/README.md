@@ -1,56 +1,34 @@
 # 1. 개요  
-소규모 제조기업을 대상으로 하는 MOS Tiny Package : Cloud 설치 및 운용 가이드 문서입니다.  
-매뉴얼 설치 스크립트에 대한 상세한 내용은 본 레포지토리의 [MOS Cloud Manual Details](https://github.com/auto-mos/MOS-Packages/blob/main/Tiny%20Package/MOS%20Cloud/MOS%20Cloud%20Manual%20Details.pdf) 문서 참조바랍니다.  
+외부 서비스 등에서 MOS Cloud의 데이터 읽기/쓰기 기능을 지원하는 REST API 서버입니다.  
+기본적으로 7770번 포트를 사용하므로, 외부 접근 시 해당 포트를 방화벽 설정에서 허용해주셔야합니다.  
 
-# 2. MOS 설치 환경  
-본 MOS Tiny Package 시험 설치 및 동작은 Ubuntu 20.04.4 Cloud 이미지로 구축한 환경에서 진행되었습니다.  
-![image](https://user-images.githubusercontent.com/114371609/228399978-e0a10077-4d26-4d6e-833d-694fdbe32c34.png)  
+# 2. 사용 방법  
+본 레포지토리에 업로드된 "제조운영체제 서비스 인터페이스.pdf" 문서의 "Type 2" 항목을 참고해주세요.  
 
-권장 사양 및 기본 환경 구성은 다음과 같습니다.  
-## PC 권장 사양  
-* Processor : 8코어 이상의 CPU  
-* Memory : 32GB  
-* Disk :
-  - Root 파일시스템 : 100GB
-  - 시계열DB 저장용 스토리지 : 400GB
-  - 백업용 블록 스토리지 : 1TB
-* OS : Ubuntu 20.04 LTS  
-  
-## 네트워크 정책  
-본 솔루션은 별도의 네트워크 방화벽 정책 추가를 필요로 합니다. 그 정보는 다음과 같습니다.  
-* **inbound 포트 허용 정책**  
-> SSH(22), http(80), https(443), AMQP(5672), InfluxDB(8086)  
-* **Outbound 허용 정책**    
-> OPCUA(4840)
-  
-## 기본 환경 구성  
-모든 설치/동작 과정 및 이후 솔루션 운용은 Root 계정을 통해 진행됩니다.
-Root 권한 접속은 아래 명령어를 통해 가능합니다.  
-```sudo su```  
-![image](https://user-images.githubusercontent.com/114371609/228400702-22254e6e-df5c-4d0b-bc66-75e9d089734c.png)  
+# 3. 설치 방법  
+2023년 12월 8일 이후로 신규로 설치한 MOS Cloud의 경우 기본적으로 REST API가 포함되어있으나,  
+이전에 설치된 MOS Cloud라면 아래 방법을 통해 새로 설치해주시기 바랍니다.  
 
-본 레포지토리에 있는 두 압축파일(MOSpackage_apps.tar.gz, MOSpackage_install.tar.gz)을 /opt 디렉토리 아래에 배치합니다.  
-만약 해당 디렉토리가 없다면 아래 명령어를 통해 디렉토리를 생성해주세요.  
-```mkdir /opt```  
-아래 명령어를 통해 /opt 디렉토리로 이동합니다.  
-```cd /opt```  
-아래 명령어를 이용해 다운로드 가능합니다.  
-```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/MOSpackage_apps.tar.gz```  
-```wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/MOSpackage_install.tar.gz```  
-
-
-압축해제 명령어를 통해 두 압축파일의 압축을 풀어줍니다.  
-```gunzip -d ./*.gz```  
-![image](https://user-images.githubusercontent.com/114371609/228401640-93f69d96-118d-4710-83d3-fe3d8d11fbdf.png)
-
-```tar xvf ./MOSpackage_apps.tar```  
-```tar xvf ./MOSpackage_install.tar```  
-![image](https://user-images.githubusercontent.com/114371609/228401851-19668232-f36c-4668-8d11-022cb8cd8831.png)
-
-이후 기본 패키지 설치 및 환경 설정, 동작 과정은 첨부되어있는 설치 가이드 문서 참고바랍니다.  
-　  
-　  
-### 문서 변경 이력(2023.07 이후)  
-- 230727 MOS Cloud Manual Details 업로드  
-- 230728 시계열 데이터베이스 백업 스크립트 업로드 및 매뉴얼 내용 추가  
-- 231023 String Datatype 수집 기능 개발/적용  
+### - AMQP 계정 생성  
+```
+rabbitmqctl add_user restapi restapi  
+rabbitmqctl set_user_tags restapi management  
+rabbitmqctl set_permissions -p / restapi ".*" ".*" ".*"  
+```
+### - 필요 Python 패키지 설치  
+```
+python -m pip install pika
+python -m pip install flask  
+```
+### - REST API 파일 및 서비스 설치
+```
+wget https://github.com/auto-mos/MOS-Packages/raw/main/Tiny%20Package/MOS%20Cloud/restapi/restapi.tar  
+tar xvf restapi.tar  
+mv restapi.py restapi.sh /opt/bin  
+mv restapi.service /usr/lib/systemd/system/
+systemctl daemon-reload  
+systemctl enable restapi.service  
+systemctl restart restapi.service  
+```
+### - 실행 예
+![image](https://github.com/auto-mos/MOS-Packages/assets/114371609/e6902815-7983-4938-8845-39c9b342323a)
